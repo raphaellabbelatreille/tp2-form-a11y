@@ -25,23 +25,27 @@
         <form id="reservation-form" action="reservation.html">
             <div class="form-section">
                 <h2>1. Vérifier la disponibilité</h2>
-                <label for="date-arrivee">Date d'arrivée :</label>
-                <input type="date" id="date-arrivee" name="date-arrivee">
+                <fieldset legend="vérifierDispo">
+                    <label for="date-arrivee">Date d'arrivée :</label>
+                    <input type="date" id="date-arrivee" name="date-arrivee">
 
-                <label for="date-depart">Date de départ :</label>
-                <input type="date" id="date-depart" name="date-depart">
-
-                <button type="button" id="check-availability-button">Vérifier la disponibilité</button>
-                <p id="availability-message"></p>
+                    <label for="date-depart">Date de départ :</label>
+                    <input type="date" id="date-depart" name="date-depart">
+                    
+                    <button type="button" id="check-availability-button">Vérifier la disponibilité</button>
+                    <p id="availability-message"></p>
+                </fieldset>                
             </div>
 
             <div class="form-section">
                 <h2>2. Nombre de personnes </h2>
-                <label>Adultes (maximum 4):</label>
-                <input id="adultes" name="adultes">
+                <fieldset legend="combienPersonne">
+                    <label for="adultes">Adultes (maximum 4):</label>
+                    <input id="adultes" name="adultes">
 
-                <label>Enfants (maximum 5):</label>
-                <input id="enfants" name="enfants">
+                    <label for="enfants">Enfants (maximum 5):</label>
+                    <input id="enfants" name="enfants">
+                </fieldset>
 
                 <p>
                     Notes: <br>
@@ -55,7 +59,23 @@
 
                 <!-- Trois boutons radio pour le choix du type de chambre simple, double ou familiale 
                 Les boutons doivent être des images cliquables: utiliser images/types-de-chambre -->
-
+                <fieldset>
+                    <ul>
+                        <li>
+                            <label for="chambre_simple">Chambre simple</label>
+                            <input type="radio" id="chambre_simple" name="choix_chambre">
+                        </li>
+                        <li>
+                            <label for="chambre_double">Chambre double</label>
+                            <input type="radio" id="chambre_double" name="choix_chambre">
+                        </li>
+                        <li>
+                            <label for="chambre_familliale">Chambre familiale</label>
+                            <input type="radio" id="chambre_familliale" name="choix_chambre">
+                        </li>
+                    </ul>
+                </fieldset>
+ 
                 <!-- [case à cocher] Inclure le petit déjeuner s'il-vous-plaît -->
 
                 <p> Le coût du petit déjeûner des adultes est de 25$ CAN, pour les enfants de moins de 12 ans c'est
@@ -66,17 +86,20 @@
 
             <div class="form-section">
                 <h2>4. Identification</h2>
-                <label>Prénom :</label>
-                <input id="prenom" name="prenom">
+                <fieldset>
+                    <label for="prenom">Prénom :</label>
+                    <input id="prenom" name="prenom">
 
-                <label>Nom :</label>
-                <input id="nom" name="nom">
+                    <label for="nom">Nom :</label>
+                    <input id="nom" name="nom">
 
-                <label>Email :</label>
-                <input id="email" name="email">
+                    <label for="email">Email :</label>
+                    <input id="email" name="email">
 
-                <label>Téléphone :</label>
-                <input id="telephone" name="telephone">
+                    <label for="telephone">Téléphone :</label>
+                    <input id="telephone" name="telephone">
+                </fieldset>
+                
 
             </div>
 
