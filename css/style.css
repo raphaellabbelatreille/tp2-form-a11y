@@ -3,27 +3,12 @@
 @import url(typo.css);
 
 
-
+/** Pour toutes les listes ul/ li*/
 .ul_principal {
     display: flex;
     list-style: none;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.image_chambre {
-    max-width: 300px;
-}
-
-fieldset {
-    width: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.menu {
-    margin: auto;
-    width: 100px;
 }
 
 .formulaire_chambre {
@@ -51,3 +36,22 @@ li {
     flex-direction: column;
     justify-content: center;
 }
+
+
+/** Image */
+.image_chambre {
+    max-width: 300px;
+}
+
+fieldset {
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    margin: auto;
+    width: 100px;
+}
+
+
