@@ -2,6 +2,7 @@
 fieldset {
     width: auto;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -9,3 +10,8 @@ fieldset {
     width: 100px;
 }
 
+ul .formulaire_identification {
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+}
