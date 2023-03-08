@@ -10,8 +10,27 @@ fieldset {
     width: 100px;
 }
 
-ul .formulaire_identification {
+.formulaire_identification {
     list-style: none;
     flex-direction: column;
     justify-content: center;
+}
+
+.formulaire_chambre {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: aqua;
+}
+@media(min-width="600px") {
+    .formulaire_chambre {
+        flex-direction: row;
+    }
+    
+}
+
+
+
+label {
+    width: fit-content;
+    text-align: center;
 }
