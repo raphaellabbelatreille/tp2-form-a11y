@@ -60,6 +60,25 @@ fieldset {
 .image_chambre {
     max-width: 300px;
 }
+img {
+    display: block;
+}
+
+/** sélection de chambre */
+.chambre {
+    margin: auto;
+    background-color: bisque;
+    border: 2px solid black;
+}
+label {
+    display: inline-block;
+}
+
+.chambre:hover, input[type="radio"]:checked + label {
+    background-color:white;
+    transform: scale(1.1);
+    border: 2px solid black;
+}
 
 
 
