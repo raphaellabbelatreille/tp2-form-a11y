@@ -10,6 +10,17 @@ fieldset {
     width: 100px;
 }
 
+ul {
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    background-color: rgb(172, 172, 172);
+    margin: 10px;
+}
+
 .formulaire_identification {
     list-style: none;
     flex-direction: column;
@@ -17,20 +28,12 @@ fieldset {
 }
 
 .formulaire_chambre {
-    flex-wrap: nowrap;
     flex-direction: column;
-    background-color: aqua;
+    justify-content:flex-start;
 }
 @media(min-width="600px") {
     .formulaire_chambre {
         flex-direction: row;
+        flex-wrap: wrap;
     }
-    
-}
-
-
-
-label {
-    width: fit-content;
-    text-align: center;
 }
