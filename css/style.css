@@ -1,3 +1,19 @@
+@charset "UTF-8";
+
+@import url(typo.css);
+
+
+
+.ul_principal {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image_chambre {
+    max-width: 300px;
+}
 
 fieldset {
     width: auto;
@@ -10,30 +26,28 @@ fieldset {
     width: 100px;
 }
 
-ul {
+.formulaire_chambre {
+    display: flex;
     list-style: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+}
+@media (min-width:600px) {
+    .formulaire_chambre {
+        flex-direction: row;
+    }
 }
 
 li {
+    width: fit-content;
     background-color: rgb(172, 172, 172);
     margin: 10px;
+    flex: 0 1 auto;
+    text-align: center;
 }
 
 .formulaire_identification {
     list-style: none;
     flex-direction: column;
     justify-content: center;
-}
-
-.formulaire_chambre {
-    flex-direction: column;
-    justify-content:flex-start;
-}
-@media(min-width="600px") {
-    .formulaire_chambre {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }

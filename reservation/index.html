@@ -21,7 +21,26 @@
             <p class="titre">Auberge du jacana africain</p>
         </a>
         <!-- Ajouter un menu : Accueil, Historique, Région, Contact, Réservation -->
-        <p> <a href="../index.html">accueil</a> | <a href="index.html">réservation</a>
+        <nav class="nav_principal">
+            <ul class="ul_principal">
+                <li>
+                    <a href="index.html">accueil</a>
+                </li>
+                
+                <li>
+                    <a href="#">Historique</a>
+                </li>
+                <li>
+                    <a href="#">Région</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                   <a href="reservation/index.html">Réservation</a> 
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -128,19 +147,25 @@
                 Les boutons doivent être des images cliquables: utiliser images/types-de-chambre -->
                 <fieldset>
                     <ul class="formulaire_chambre">
-                        <li>
+                        <li class="chambre">
                             <label for="chambre_simple">
-                                <img src="../images/types-de-chambre/1-lit-double.webp">
-                                <p>Chambre simple</p>
+                                <img class="image_chambre" src="../images/types-de-chambre/1-lit-double.webp">
+                                <figcaption>Chambre simple</figcaption>
                             </label>
                             <input type="radio" id="chambre_simple" name="choix_chambre" required>
                         </li>
-                        <li>
-                            <label for="chambre_double">Chambre double</label>
+                        <li class="chambre">
+                            <label for="chambre_double">
+                                <img class="image_chambre" src="../images/types-de-chambre/2-lits-double.jpg">
+                                <figcaption>Chambre double</figcaption>
+                            </label>
                             <input type="radio" id="chambre_double" name="choix_chambre" required>
                         </li>
-                        <li>
-                            <label for="chambre_familliale">Chambre familiale</label>
+                        <li class="chambre">
+                            <label for="chambre_familliale">
+                                <img class="image_chambre" src="../images/types-de-chambre/chambre-familiale.jpg">
+                                <figcaption> Chambre familiale</figcaption>
+                            </label>
                             <input type="radio" id="chambre_familliale" name="choix_chambre" required>
                         </li>
                     </ul>
