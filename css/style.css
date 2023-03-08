@@ -80,6 +80,11 @@ label {
     border: 2px solid black;
 }
 
+/** style du formulaire d'identification */
+.identity {
+    margin: 2em;
+}
+
 
 
 
