@@ -105,10 +105,11 @@
 
             <div class="form-section">
                 <h2>2. Nombre de personnes </h2>
-                <fieldset legend="combienPersonne">
+                <fieldset legend="combienAdultes">
                     <label for="adultes">Adultes (maximum 4):</label>
                     <input id="adultes" name="adultes" required>
-
+                </fieldset>
+                <fieldset legend="combienEnfants">
                     <label for="enfants">Enfants (maximum 5):</label>
                     <input id="enfants" name="enfants" required>
                 </fieldset>
@@ -147,6 +148,10 @@
                 <p> Le coût du petit déjeûner des adultes est de 25$ CAN, pour les enfants de moins de 12 ans c'est
                     12.50$
                     CAN.</p>
+                <fieldset legend="petit-dejeuner">
+                    <label for="dejeuner">Inclure le petit-dejeuner s'il vous plait.</label>
+                    <input type="checkbox" id="dejeuner" name="dejeuner_ou_non">
+                </fieldset>
 
             </div>
 

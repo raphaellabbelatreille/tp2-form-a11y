@@ -1,6 +1,7 @@
 
 fieldset {
     width: auto;
+    justify-content: center;
 }
 
 .menu {
