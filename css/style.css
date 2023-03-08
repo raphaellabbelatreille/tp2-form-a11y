@@ -2,13 +2,37 @@
 
 @import url(typo.css);
 
+fieldset {
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    margin: auto;
+    width: 100px;
+}
+
 
 /** Pour toutes les listes ul/ li*/
+.nav_principal {
+    background-color: black;
+}
 .ul_principal {
     display: flex;
     list-style: none;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.li_nav {
+    background-color: aqua;
+    width: fit-content;
+    margin: 10px;
+    flex: 0 1 auto;
+    text-align: center;
+}
+.li_nav .active {
+    background-color: red;
 }
 
 .formulaire_chambre {
@@ -23,13 +47,7 @@
     }
 }
 
-li {
-    width: fit-content;
-    background-color: rgb(172, 172, 172);
-    margin: 10px;
-    flex: 0 1 auto;
-    text-align: center;
-}
+
 
 .formulaire_identification {
     list-style: none;
@@ -43,15 +61,6 @@ li {
     max-width: 300px;
 }
 
-fieldset {
-    width: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-.menu {
-    margin: auto;
-    width: 100px;
-}
 
 
