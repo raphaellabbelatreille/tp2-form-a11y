@@ -20,11 +20,15 @@ header {
 .tableau_titre {
     display: grid;
     max-height: 600px;
+    max-width: 900px;
     grid-template-columns: repeat(3, 1fr)  ;
     grid-template-rows:repeat(3,1fr) ;
 }
 .bloc_titre {
     font-size: 3em;
+    text-align: center;
+    color: blueviolet;
+    font-style:italic;
 }
 .bloc_img {
     grid-column: 2;
