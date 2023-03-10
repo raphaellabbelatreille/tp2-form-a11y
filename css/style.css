@@ -13,11 +13,25 @@ fieldset {
     width: 100px;
 }
 
-
-/** Pour toutes les listes ul/ li*/
-.nav_principal {
+/** Header */ 
+header {
     background-color: black;
 }
+.tableau_titre {
+    display: grid;
+    max-height: 600px;
+    grid-template-columns: repeat(3, 1fr)  ;
+    grid-template-rows:repeat(3,1fr) ;
+}
+.bloc_titre {
+    font-size: 3em;
+}
+.bloc_img {
+    grid-column: 2;
+    grid-row: 1/4;
+}
+
+/** Pour toutes les listes ul/ li*/
 .ul_principal {
     display: flex;
     list-style: none;
