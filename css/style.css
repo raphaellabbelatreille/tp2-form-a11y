@@ -43,7 +43,7 @@ header {
     justify-content: space-around;
 }
 .li_nav {
-    background-color: aqua;
+    color:aqua;
     width: fit-content;
     margin: 10px;
     flex: 0 1 auto;
@@ -105,23 +105,33 @@ label {
 }
 
 /** aside */
+main {
+    display: grid;
+    grid-template-columns: 2fr  ;
+    grid-template-rows: 2fr ;
+}
 @media (min-width:600px) {
     aside {
-        position: absolute;
-        left: 0px;
-        top: 800px;
-        width: 300px;
-        background-color: gray;
-        padding: 10px;
-    }
-    main {
-        padding-left: 340px;
+        order: -1;
+        
     }
     
 }
 aside {
-    
-  }
+    background-color: gray;
+    padding: 10px;
+    font-size: 1em;
+}
+aside h3 {
+    font-style: italic;
+    font-size: 1em;
+
+}
+footer {
+    text-align: center;
+    padding-left: 12%;
+    padding-right: 12%;
+}
   
 
 
