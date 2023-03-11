@@ -55,19 +55,19 @@ ul {}
 }
 
 .formulaire_chambre {
-    max-width:300px;
+    width:100%;
     display: flex;
     list-style: none;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 0%;
 }
 @media (min-width:600px) {
     .formulaire_chambre {
         flex-direction: row;
+        justify-content: space-between;
     }
 }
-
-
 
 .formulaire_identification {
     list-style: none;
@@ -76,27 +76,41 @@ ul {}
 }
 
 
+
+
 /** Image */
 .image_chambre {
-    max-width: 700px;
+    width: 100%; 
 }
 @media (min-width:600px) {
-    .image_chmabre {
-        width: 500px;
+    .image_chambre {
+        width: 100%;
     }
 }
 img {
     display: block;
+    width: 100%;
 }
 
 /** sélection de chambre */
 .chambre {
     background-color: bisque;
     border: 2px solid black;
+    width: 90%;
+    margin: auto
+}
+@media (min-width: 600px) {
+    .chambre {
+        width:33%;
+    }
+    
 }
 label {
     text-align: center;
     display: inline-block;
+}
+.label_chambre {
+    width:100%
 }
 
 .chambre:hover, input[type="radio"]:checked + label {
